@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+body .toolbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #777;
+}
+
+body .toolbox .pen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+body .toolbox .pen__sizeInfo {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body .toolbox .collors {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #C0C0C0;
+  padding: 10px;
+}
+
+body .toolbox .collors .color {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 1px 3px #616767;
+          box-shadow: 0px 0px 1px 3px #616767;
+}
+
+body .toolbox .collors .color:hover {
+  border: 2px solid black;
+}
+
+body .toolbox .collors .color--c1 {
+  background-color: #000002;
+}
+
+body .toolbox .collors .color--c2 {
+  background-color: #7D807F;
+}
+
+body .toolbox .collors .color--c3 {
+  background-color: #880117;
+}
+
+body .toolbox .collors .color--c4 {
+  background-color: #EC1A26;
+}
+
+body .toolbox .collors .color--c5 {
+  background-color: #FF822A;
+}
+
+body .toolbox .collors .color--c6 {
+  background-color: #F8F700;
+}
+
+body .toolbox .collors .color--c7 {
+  background-color: #24B247;
+}
+
+body .toolbox .collors .color--c8 {
+  background-color: #00A7ED;
+}
+
+body .toolbox .collors .color--c9 {
+  background-color: #3E47C9;
+}
+
+body .toolbox .collors .color--c10 {
+  background-color: #9E4B9D;
+}
+
+body .toolbox .collors .color--c11 {
+  background-color: #FFFFFF;
+}
+
+body .toolbox .collors .color--c12 {
+  background-color: #C6C2C1;
+}
+
+body .toolbox .collors .color--c13 {
+  background-color: #B97A59;
+}
+
+body .toolbox .collors .color--c14 {
+  background-color: #FFAEC4;
+}
+
+body .toolbox .collors .color--c15 {
+  background-color: #FFC70E;
+}
+
+body .toolbox .collors .color--c16 {
+  background-color: #B6E41B;
+}
+
+body .toolbox .collors .color--c17 {
+  background-color: #9BD9E8;
+}
+
+body .toolbox .collors .color--c18 {
+  background-color: #6F92BE;
+}
+/*# sourceMappingURL=main.css.map */
