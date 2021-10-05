@@ -47,8 +47,6 @@ let painting = false;
 const startPosition = (e) => {
     painting = true;
     draw(e)
-    console.log(c.get)
-
 }
 
 const finishedPosition = () => {
@@ -61,7 +59,6 @@ const finishedPosition = () => {
 const draw = (e) => {
     if (!painting) return;
 
-    console.log(e)
     ctx.lineWidth = sliderValue;
     ctx.lineCap = 'round';
     ctx.strokeStyle = color;
@@ -74,7 +71,7 @@ const draw = (e) => {
 
 const drawMobile = (e) => {
     if (!painting) return;
-
+    e.preventDefault()
     ctx.lineWidth = sliderValue;
     ctx.lineCap = 'round';
     ctx.strokeStyle = color;
