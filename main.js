@@ -6,8 +6,20 @@ const colorsPiker = document.querySelectorAll('.color');
 const correction = 104;
 let canvasImage = undefined;
 const image = new Image();
+let isMobile = false;
 
 console.log(sliderInfo)
+
+const deviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
+console.log(deviceType())
 
 
 let color = 'rgb(0, 0, 0)'
@@ -35,6 +47,8 @@ let painting = false;
 const startPosition = (e) => {
     painting = true;
     draw(e)
+    console.log(c.get)
+
 }
 
 const finishedPosition = () => {
@@ -46,15 +60,29 @@ const finishedPosition = () => {
 
 const draw = (e) => {
     if (!painting) return;
-    else {
-        ctx.lineWidth = sliderValue;
-        ctx.lineCap = 'round';
-        ctx.strokeStyle = color;
-        ctx.lineTo(e.clientX, e.clientY - correction);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY - correction);
-    }
+
+    console.log(e)
+    ctx.lineWidth = sliderValue;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = color;
+    ctx.lineTo(e.clientX, e.clientY - correction);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(e.clientX, e.clientY - correction);
+
+}
+
+const drawMobile = (e) => {
+    if (!painting) return;
+
+    ctx.lineWidth = sliderValue;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = color;
+    ctx.lineTo(e.touches[0].clientX, e.touches[0].clientY - correction);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY - correction);
+
 }
 
 const Keyboard = (e) => {
@@ -62,9 +90,14 @@ const Keyboard = (e) => {
 }
 
 window.addEventListener('keypress', Keyboard)
+
 c.addEventListener('mousedown', startPosition);
 c.addEventListener('mouseup', finishedPosition);
 c.addEventListener('mousemove', draw);
+
+c.addEventListener('touchstart', startPosition);
+c.addEventListener('touchmove', drawMobile);
+c.addEventListener('touchend', finishedPosition);
 
 window.addEventListener('resize', (event) => {
     c.width = window.innerWidth;
