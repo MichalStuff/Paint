@@ -3,6 +3,8 @@ const ctx = c.getContext("2d");
 const slider = document.querySelector('.pen__size');
 const sliderInfo = document.querySelector('.pen__sizeInfo');
 const colorsPiker = document.querySelectorAll('.color');
+const colorInput = document.querySelector('.color_input');
+
 const correction = 104;
 let canvasImage = undefined;
 const image = new Image();
@@ -31,6 +33,7 @@ colorsPiker.forEach(colorItem => colorItem.addEventListener('click', () => {
     const backgroundColor = style.backgroundColor;
     console.log(backgroundColor);
     color = backgroundColor;
+    colorInput.value = rgbToHex(color);
 }))
 
 slider.addEventListener("input", (e) => {
@@ -82,7 +85,25 @@ const drawMobile = (e) => {
 
 }
 
+colorInput.addEventListener("change", () => {
+    color = colorInput.value;
+});
+
 const Keyboard = (e) => {
+
+}
+
+const rgbToHex = (string) => {
+    let r = string.slice(string.indexOf('(') + 1, string.indexOf(','));
+    r = r * 1;
+    string = string.slice(string.indexOf(',') + 1);
+    let g = string.slice(0, string.indexOf(','));
+    g = g * 1;
+    string = string.slice(string.indexOf(',') + 1);
+    let b = string.slice(0, string.indexOf(')'));
+    b = b * 1;
+    const hex = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
+    return hex;
 
 }
 

@@ -25,9 +25,9 @@ body{
         background-color: #777;
         .pen{
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
             justify-content: center;
-            align-items: center;
+            align-items: center; 
             background-color: white;
             padding: 10px;
             &__sizeInfo{
@@ -36,7 +36,7 @@ body{
                 font-weight: bold;
             }
         }
-        .collors{
+        .colors{  
             flex-basis: 300px;
             display: flex;
             flex-wrap: wrap;
@@ -104,7 +104,7 @@ body{
                 &--c17{
                     background-color: #9BD9E8;
                 }
-                &--c18{
+                &--c18{ 
                     background-color: #6F92BE;
                 }
             }

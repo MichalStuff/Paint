@@ -59,7 +59,7 @@ body .toolbox .pen__sizeInfo {
   font-weight: bold;
 }
 
-body .toolbox .collors {
+body .toolbox .colors {
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
   display: -webkit-box;
@@ -77,7 +77,7 @@ body .toolbox .collors {
   padding: 10px;
 }
 
-body .toolbox .collors .color {
+body .toolbox .colors .color {
   width: 20px;
   height: 20px;
   margin: 5px;
@@ -86,79 +86,79 @@ body .toolbox .collors .color {
           box-shadow: 0px 0px 1px 3px #616767;
 }
 
-body .toolbox .collors .color:hover {
+body .toolbox .colors .color:hover {
   border: 2px solid black;
 }
 
-body .toolbox .collors .color--c1 {
+body .toolbox .colors .color--c1 {
   background-color: #000002;
 }
 
-body .toolbox .collors .color--c2 {
+body .toolbox .colors .color--c2 {
   background-color: #7D807F;
 }
 
-body .toolbox .collors .color--c3 {
+body .toolbox .colors .color--c3 {
   background-color: #880117;
 }
 
-body .toolbox .collors .color--c4 {
+body .toolbox .colors .color--c4 {
   background-color: #EC1A26;
 }
 
-body .toolbox .collors .color--c5 {
+body .toolbox .colors .color--c5 {
   background-color: #FF822A;
 }
 
-body .toolbox .collors .color--c6 {
+body .toolbox .colors .color--c6 {
   background-color: #F8F700;
 }
 
-body .toolbox .collors .color--c7 {
+body .toolbox .colors .color--c7 {
   background-color: #24B247;
 }
 
-body .toolbox .collors .color--c8 {
+body .toolbox .colors .color--c8 {
   background-color: #00A7ED;
 }
 
-body .toolbox .collors .color--c9 {
+body .toolbox .colors .color--c9 {
   background-color: #3E47C9;
 }
 
-body .toolbox .collors .color--c10 {
+body .toolbox .colors .color--c10 {
   background-color: #9E4B9D;
 }
 
-body .toolbox .collors .color--c11 {
+body .toolbox .colors .color--c11 {
   background-color: #FFFFFF;
 }
 
-body .toolbox .collors .color--c12 {
+body .toolbox .colors .color--c12 {
   background-color: #C6C2C1;
 }
 
-body .toolbox .collors .color--c13 {
+body .toolbox .colors .color--c13 {
   background-color: #B97A59;
 }
 
-body .toolbox .collors .color--c14 {
+body .toolbox .colors .color--c14 {
   background-color: #FFAEC4;
 }
 
-body .toolbox .collors .color--c15 {
+body .toolbox .colors .color--c15 {
   background-color: #FFC70E;
 }
 
-body .toolbox .collors .color--c16 {
+body .toolbox .colors .color--c16 {
   background-color: #B6E41B;
 }
 
-body .toolbox .collors .color--c17 {
+body .toolbox .colors .color--c17 {
   background-color: #9BD9E8;
 }
 
-body .toolbox .collors .color--c18 {
+body .toolbox .colors .color--c18 {
   background-color: #6F92BE;
 }
 /*# sourceMappingURL=main.css.map */
